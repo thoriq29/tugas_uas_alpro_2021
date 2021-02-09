@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  {% for layer in foods %}
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      {% for food in layer %}
+        <div class="w3-quarter">
+          <img src="{% static "images/" %}{{food.getImagePath}}" alt="{{ food.getName }}" style="width:100%">
+          <h3>{{food.getName}}</h3>
+          <p>{{food.getDescription}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+{% endblock content %}
