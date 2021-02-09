@@ -25,7 +25,7 @@ SECRET_KEY = 'wxv+3*!&0)+yep5f207qmhz*ay6*od)wv0n7+d#s-wch(a_mpw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.26', 'localhost']
+ALLOWED_HOSTS = ['food-catalogue.herokuapp.com']
 
 
 # Application definition
